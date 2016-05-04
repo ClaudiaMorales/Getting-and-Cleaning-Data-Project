@@ -69,8 +69,9 @@ connected.
 - Merge data, subjects, and labels to single data set
 - Write data set to file
 
-#### Dataset called TidyData: average of measurement for activity and subject
- 
+#### Dataset called TidyData: 
+	
+- Average of measurement for activity and subject
 - For each activity in a subject, get the full list of measurements
 - Calculate the mean of each of these activities
 - Place the means in subsequent columns of the subject/activity row
