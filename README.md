@@ -42,30 +42,19 @@ Good luck!
 
 #### Code Book
 
-_From Overview:_ A code book that describes the variables, the data, and any
+A code book that describes the variables, the data, and any
 transformations or work that you performed to clean up the data called
 `CodeBook.md`.
 
-_From Evaluation:_ Please submit a code book that modifies and updates the
-codebooks available to you with the data to indicate all the variables and
-summaries you calculated, along with units, and any other relevant information.
-
 #### README
 
-_From Overview:_ You should also include a `README.md` in the repo with your
+You should also include a `README.md` in the repo with your
 scripts. This repo explains how all of the scripts work and how they are
 connected.
 
-_From Question:_ You should include a `README.md` in the repo describing how
-the script works.
-
-_From Evaluation:_ I was able to follow the README in the directory that
-explained what the analysis files did. 
-
-
 ### Data Analysis Explanation
 
-#### For 1st tiny data set:
+#### Dataset called ExtractedData:
 
 - Read data sets and combine them
 - Read subjects and combine them
@@ -73,19 +62,17 @@ explained what the analysis files did.
 - Read features list
 - Subset only only std and mean features from list
 - Perform same subset on data set
-- Rename features to be more human readable
+- Rename features to be more readable names
 - Read activity list
-- Rename activities to be more human readable
+- Rename activities to be more readable names
 - Rename data labels with activity name
-- Merge data, subjects, and labels to single tiny data set
-- Write tiny data set to file
+- Merge data, subjects, and labels to single data set
+- Write data set to file
 
-#### For 2nd tiny data set: average of measurement for activity and subject
-
-- Prepare empty data set of appropriate length for 
-- Loop through subjects, then subloop through activities
+#### Dataset called TidyData: average of measurement for activity and subject
+ 
 - For each activity in a subject, get the full list of measurements
 - Calculate the mean of each of these activities
 - Place the means in subsequent columns of the subject/activity row
-- Write second tiny data set to file
+- Write data set to file
 
