@@ -15,24 +15,23 @@
 The script `run_analysis.R` performs the following process to clean up the data
 and create dataset:
 
-1. In order to merge the training and test sets to create one data set, I first read the Train data files (subject, activity, features)
-   and follow the same process for the Test data files
-   a. Uses str() function to examine the properties of the variables from above files
-   b. Uses rbind() by pairing the 6 files into Subject, Activity, and Features
+1. In order to merge the training and test sets to create one data set, I first read the Train data files (subject, activity, features)and follow the same process for the Test data files
+- Uses str() function to examine the properties of the variables from above files
+- Uses rbind() by pairing the 6 files into Subject, Activity, and Features
 
 2. Reads `features.txt` and uses only the measurements on the mean and standard
    deviation for each measurement 
-   a. Uses cbind() to merge all into "Data" with Features, Activity, and Subject variables
+- Uses cbind() to merge all into "Data" with Features, Activity, and Subject variables
 
 3. Reads `activity_labels.txt` and renamed activity names 
-   a. Factor the 'activity' variable
+- Factor the 'activity' variable
 
 4. Labels the data set with descriptive names
-   a. Names are converted to lower case; underscores and brackets are removed
+- Names are converted to lower case; underscores and brackets are removed
 
 5. Created a 'tidyData' set with the average of each variable and subject
-   a. Entries are ordered by subject and activity
-   b. The result is saved as `tidy.txt`
+- Entries are ordered by subject and activity
+- The result is saved as `tidy.txt`
 
 ### Variables
 
